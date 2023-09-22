@@ -11,6 +11,7 @@
 
     --color-heading: #1b0760;
     --color-body: #918ca4;
+    --color-body-darker: #5c5577
     --color-borders: #ccc;
 
     --border-radius: 30px;
@@ -310,6 +311,19 @@ a {
     margin-bottom: 2rem;
 }
 
+/* Media */
+.media {
+    display: flex;
+}
+.media__title {
+    margin-top: 0;
+}
+.media__body {
+    margin: 0 2rem;
+}
+.media__image {
+    margin-top: 0.5rem;
+}
 @media screen and (min-width: 1024px) {
     .plan__price {
         font-size: 5rem;
@@ -319,5 +333,49 @@ a {
     }
     .plan__description {
         font-size: 1.7rem;
+    }
+}
+/* Quoye */
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darker);
+    line-height: 1.5
+}
+
+.quote__text::before {
+    content: open-quote;
+}
+.quote__text::after {
+    content: close-quote;
+}
+.quote__author {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.quote_organization {
+    color: var(--color-heading);
+    opacity: 0.4;
+    font-size: 2rem;
+    
+}
+
+.quote__line {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .quote {
+        font-size: 2rem;
+    }
+    .quote_author {
+        font-size: 2.4rem;
+    }
+
+    .quote_organization {
+        font-size: 1.6rem;
     }
 }
