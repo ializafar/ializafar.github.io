@@ -582,7 +582,8 @@ a {
     align-items: center;
 }
 .nav a{
-    padding-top: 0.7rem;
+    display: flex;
+    padding: 1rem;
 }
 .nav__logo {
     width: 7rem;
@@ -612,4 +613,12 @@ a {
 
 .nav__toggler {
     opacity: 0.5;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.nav.collapsible--expand .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
 }
