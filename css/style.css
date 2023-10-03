@@ -164,6 +164,7 @@ a {
 }
 .icon--primary {
     fill: var(--color-primary);
+    color: red;
 }
 
 .icon--white {
@@ -492,7 +493,9 @@ a {
 }
 
 /* Collapsible */
-
+.collapsible {
+    margin: 4rem;
+}
 .collapsible__header {
     display: flex;
     justify-content: space-between;
@@ -500,4 +503,28 @@ a {
 .collapsible__heading {
     margin-top: 0;
     font-size: 3rem;
+    
+}
+
+.collapsible__cheveron{
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+.collapsible__content {
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.5s;
+   opacity: 0;
+
+}
+
+.collapsible--expand .collapsible__cheveron{
+    transform: rotate(90deg);
+}
+
+.collapsible--expand .collapsible__content {
+   max-height: 100vh;
+   opacity: 1;
+   transition: max-height 0.5s;
+
 }
