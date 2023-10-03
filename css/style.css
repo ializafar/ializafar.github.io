@@ -166,6 +166,15 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--white {
+    fill: white;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon-container {
     background-color: #f3f9fa;
     width: 64px;
@@ -364,7 +373,7 @@ a {
 
 .quote__line {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -378,4 +387,117 @@ a {
     .quote_organization {
         font-size: 1.6rem;
     }
+}
+
+.boxes {
+    position: relative;
+}
+.boxa  {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* Testimonials */
+
+ .testimonial {
+    padding: 3rem;
+    margin: 5rem;
+}
+
+.testimonial__image {
+    
+    width: 100%;
+    
+}
+
+
+.testimonial__image-container {
+    position: relative;
+}
+
+.testimonial__icon {
+    position: absolute;
+    /* right: 0;
+    top: 0; */
+    top: 3rem;
+    right: -32px;
+    background: var(--color-accent);
+} 
+
+.grid {
+    display: grid;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid--1x3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+/* Callouts */
+
+.callout {
+    padding: 4rem;
+    margin: 4rem;
+    border-radius: 10px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+}
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    align-self: center;
+    justify-self: center;
+}
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.callout__content {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+/* Collapsible */
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
 }
