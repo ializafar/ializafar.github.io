@@ -622,3 +622,27 @@ a {
     box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
 }
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+     .nav__list {
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: auto;
+    }
+    .nav__item {
+        border: 0;
+    }
+   
+}
