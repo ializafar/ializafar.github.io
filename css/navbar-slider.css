@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    background-color: #000;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    position: relative;
+}
+
+.logo {
+    height: 3.6rem;
+}
+
+.main-nav {
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+}
+
+.main-nav .navbar-link:link,
+.navbar-link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav .navbar-link:hover,
+.navbar-link:active {
+    color: #ccc;
+}
+
+.navbar .navbar-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #fff;
+}
+.icon-mobile-nav[name="menu"] {
+    display: block;
+}
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+.nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+}
+.nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+}
+.test-body {
+    height: 200vh;
+}
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+    }
+}

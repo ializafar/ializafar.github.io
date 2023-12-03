@@ -1,0 +1,76 @@
+.style-guide-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.style-guid-text {
+    margin: auto 0;
+}
+
+.test-bar {
+    width: 10rem;
+    height: 1rem;
+    width: 10rem;
+    margin: auto auto;
+}
+
+.grid-colors-3-cols {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr; /* Three equal-width columns */
+    grid-gap: 10px; /* Gap between grid items */
+    margin: 2.4rem auto;
+    padding: 2.4rem;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 3px lightgray;
+}
+
+.grid-colors-2-cols {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px; /* Gap between grid items */
+    margin: 2.4rem auto;
+    padding: 2.4rem;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 3px lightgray;
+}
+
+.primary-text-color-bg {
+    background-color: var(--text-color-primary);
+}
+.secondary-text-color-bg {
+    background-color: var(--text-color-secondary);
+}
+.tertiary-text-color-bg {
+    background-color: var(--text-color-tertiary);
+}
+.quaternary-text-color-bg {
+    background-color: var(--text-color-quaternary);
+}
+.quinary-text-color-bg {
+    background-color: var(--text-color-quinary);
+}
+.senary-text-color-bg {
+    background-color: var(--text-color-senary);
+}
+.septenary-text-color-bg {
+    background-color: var(--text-color-septenary);
+}
+.accent-text-color-bg {
+    background-color: var(--color-accent);
+}
+.success-text-color-bg {
+    background-color: var(--text-color-success);
+}
+.info-text-color-bg {
+    background-color: var(--text-color-info);
+}
+.critical-text-color-bg {
+    background-color: var(--text-color-critical);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

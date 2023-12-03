@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ali Zafar</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/header-style-guide.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="primary-lightest-background sticky">
+        <nav class="navbar slider half">
+            <a href="/"><img src="images/logo.png" alt="" class="logo" /></a>
+
+            <div class="nav-content-container">
+                <div class="nav-background-opaque"></div>
+                <div class="nav-background"></div>
+                <div class="nav-content">
+                    <ul class="navbar-links">
+                        <li>
+                            <a class="navbar-link" href="#colors">Colors</a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#buttons">Buttons</a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#links">Links</a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#text-colors"
+                                >Text Colors</a
+                            >
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="#text-styles">Text</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#form"
+                                class="adp-btn adp-btn--primary adp-btn-small"
+                                >Forms</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-btn">
+                <ion-icon name="menu" class="icon nav-icon-color"></ion-icon>
+                <ion-icon name="close" class="icon nav-icon-color"></ion-icon>
+            </button>
+        </nav>
+        <main class="main container">
+            <div class="style-guide">
+                <!-- Colors -->
+                <table id="colors">
+                    <tr>
+                        <th colspan="4">
+                            <h1 class="adp-text-large-title">Colors</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Color</th>
+                        <th>Class</th>
+                        <th>variable</th>
+                    </tr>
+                    <tr>
+                        <td>Primary Background</td>
+                        <td>
+                            <div class="primary-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="primary-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-primary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Lighter</td>
+                        <td>
+                            <div
+                                class="primary-lighter-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="primary-lighter-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-primary-lighter</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Darker</td>
+                        <td>
+                            <div
+                                class="primary-darker-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="primary-darker-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-primary-darker</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Lightest</td>
+                        <td>
+                            <div
+                                class="primary-lightest-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="primary-lightest-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-lightest-background</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Darkest</td>
+                        <td>
+                            <div
+                                class="primary-darkest-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="primary-darkest-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-darkest-background</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Background</td>
+                        <td>
+                            <div class="secondary-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="secondary-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-secondary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Lighter</td>
+                        <td>
+                            <div
+                                class="secondary-lighter-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="secondary-lighter-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-secondary-lighter</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Darker</td>
+                        <td>
+                            <div
+                                class="secondary-darker-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="secondary-darker-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-secondary-darker</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent</td>
+                        <td>
+                            <div class="accent-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="accent-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-accent</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent Lighter</td>
+                        <td>
+                            <div
+                                class="accent-lighter-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="accent-lighter-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-accent-lighter</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent Darker</td>
+                        <td>
+                            <div
+                                class="accent-darker-background test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="accent-darker-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-accent-darker</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Success</td>
+                        <td>
+                            <div class="success-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="success-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-success</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Info</td>
+                        <td>
+                            <div class="info-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="info-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-info</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Critical</td>
+                        <td>
+                            <div class="critical-background test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="critical-background"</p>
+                        </td>
+                        <td>
+                            <p>--color-critical</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Buttons -->
+                <table id="buttons">
+                    <tr>
+                        <th colspan="3">
+                            <h1>Style Guide for buttons</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Primary Button</td>
+                        <td>
+                            <button class="adp-btn adp-btn--primary">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--primary"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Button With Glow</td>
+                        <td>
+                            <button class="adp-btn adp-btn--primary-glow">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--primary-glow"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Primary Button Rounded Edge</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--primary adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--primary
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Button Rounded With Glow</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--primary-glow adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--primary-glow
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Secondary button -->
+                    <tr>
+                        <td>Secondary Button</td>
+                        <td>
+                            <button class="adp-btn adp-btn--secondary">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--secondary"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Button With Glow</td>
+                        <td>
+                            <button class="adp-btn adp-btn--secondary-glow">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--secondary-glow"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Secondary Button Rounded Edge</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--secondary adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--secondary
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Button Rounded With Glow</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--secondary-glow adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--secondary-glow
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Outline Button -->
+                    <tr>
+                        <td>Outline Button</td>
+                        <td class="primary-background">
+                            <button class="adp-btn adp-btn--outline">
+                                Outline
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--outline"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outline Button Glow</td>
+                        <td class="primary-background">
+                            <button class="adp-btn adp-btn--outline-glow">
+                                Outline
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--outline"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outline Button Rounded Edge</td>
+                        <td class="primary-background">
+                            <button
+                                class="adp-btn adp-btn--outline adp-btn--rounded-edge"
+                            >
+                                Outline
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--outline
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outline Button Rounded Edge Glow</td>
+                        <td class="primary-background">
+                            <button
+                                class="adp-btn adp-btn--outline-glow adp-btn--rounded-edge"
+                            >
+                                Outline
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--outline
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent Button</td>
+                        <td>
+                            <button class="adp-btn adp-btn--accent">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--accent"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent Button With Glow</td>
+                        <td>
+                            <button class="adp-btn adp-btn--accent-glow">
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--accent-glow"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Accent Button Rounded Edge</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--accent adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--accent
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accent Button Rounded With Glow</td>
+                        <td>
+                            <button
+                                class="adp-btn adp-btn--accent-glow adp-btn--rounded-edge"
+                            >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <p>
+                                class="adp-btn adp-btn--accent-glow
+                                adp-btn--rounded-edge"
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Buttons -->
+                <table id="links">
+                    <tr>
+                        <th colspan="3">
+                            <h1>Style Guide for Links</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Underline Link</td>
+                        <td>
+                            <a href="" class="adp-link adp-link--primary"
+                                >Link</a
+                            >
+                        </td>
+                        <td>
+                            <p>class="adp-link adp-link--primary"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Underline Link White</td>
+                        <td class="primary-background">
+                            <a href="" class="adp-link adp-link--white">Link</a>
+                        </td>
+                        <td>
+                            <p>class="adp-link adp-link--white"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Underline Link Arrow</td>
+                        <td>
+                            <a
+                                href=""
+                                class="adp-link adp-link--primary link-arrow"
+                                >Link</a
+                            >
+                        </td>
+                        <td>
+                            <p>class="adp-link adp-link--primary link-arrow"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="adp-text-body">
+                                Note: If you want a link to look like a button
+                                then apply button class. Here is example of two
+                                butons. You can do same to make it look like
+                                buttons in Buttn style guide sections
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Button Link Primary</td>
+                        <td>
+                            <a href="" class="adp-btn adp-btn--primary">
+                                Button
+                            </a>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--primary"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Button Link Primary Glow</td>
+                        <td>
+                            <a href="" class="adp-btn adp-btn--primary-glow">
+                                Button
+                            </a>
+                        </td>
+                        <td>
+                            <p>class="adp-btn adp-btn--primary-glow"</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Text Color -->
+                <table id="text-colors">
+                    <tr>
+                        <th colspan="4"><h1>Text Colors</h1></th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Color</th>
+                        <th>Class</th>
+                        <th>variable</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="primary-text-color">Primary Text Color</p>
+                        </td>
+                        <td>
+                            <div class="primary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="primary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-primary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="secondary-text-color">
+                                Secondary Text Color
+                            </p>
+                        </td>
+                        <td>
+                            <div class="secondary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="secondary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-secondary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tertiary-text-color">
+                                Tertiary Text Color
+                            </p>
+                        </td>
+                        <td>
+                            <div class="tertiary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="tertiary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>---text-color-tertiary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="quaternary-text-color">
+                                Quaternary Text Color
+                            </p>
+                        </td>
+                        <td>
+                            <div
+                                class="quaternary-text-color-bg test-bar"
+                            ></div>
+                        </td>
+                        <td>
+                            <p>class="quaternary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-quaternary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="quinary-text-color">Quinary Text Color</p>
+                        </td>
+                        <td>
+                            <div class="quinary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="quinary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-quinary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="senary-text-color">Senary Text Color</p>
+                        </td>
+                        <td>
+                            <div class="senary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="senary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-senary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="septenary-text-color">
+                                Septenary Text Color
+                            </p>
+                        </td>
+                        <td>
+                            <div class="septenary-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="septenary-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-septenary</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="accent-text-color">Accent Text Color</p>
+                        </td>
+                        <td>
+                            <div class="accent-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="accent-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--color-accent</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="success-text-color">Success Text Color</p>
+                        </td>
+                        <td>
+                            <div class="success-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="success-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-success</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="info-text-color">Info Text Color</p>
+                        </td>
+                        <td>
+                            <div class="info-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="info-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-info</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="success-text-color">
+                                Critical Text Color
+                            </p>
+                        </td>
+                        <td>
+                            <div class="critical-text-color-bg test-bar"></div>
+                        </td>
+                        <td>
+                            <p>class="critical-text-color"</p>
+                        </td>
+                        <td>
+                            <p>--text-color-critical</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Text Styles -->
+                <table id="text-styles">
+                    <tr>
+                        <th colspan="4"><h1>Text Styles</h1></th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            <p class="adp-text-caption">
+                                Note: Weigths are recomended. But you can always
+                                change it by adding following class at the end
+                            </p>
+                            <div class="flex-column">
+                                <p class="adp-text-caption weight-regular">
+                                    weight-regular (400)
+                                </p>
+                                <p class="adp-text-caption weight-medium">
+                                    weight-medium (500)
+                                </p>
+                                <p class="adp-text-caption weight-semi-bold">
+                                    weight-semi-bold (600)
+                                </p>
+                                <p class="adp-text-caption weight-bold">
+                                    weight-bold (700)
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="width: 10rem">Name</th>
+                        <th>Responsive Sizes</th>
+                        <th>Class</th>
+                        <th>variable</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1
+                                class="adp-text-largest-title primary-text-color"
+                            >
+                                Largest Title
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 8.6rem</div>
+                                <div>iPad 8.0rem</div>
+                                <div>Phone Landscape/portrait 7.2rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-largest-title"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>Letter spacing -0.5px</p>
+                                <p>font-weight: 500</p>
+                                <p>Line height: 1.05</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1
+                                class="adp-text-larger-title primary-text-color"
+                            >
+                                Larger Title
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 6.4rem</div>
+                                <div>iPad 6.0rem</div>
+                                <div>Phone Landscape/portrait 5.6rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-larger-title"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>Letter spacing -0.5px</p>
+                                <p>font-weight: 500</p>
+                                <p>Line height: 1.05</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1
+                                class="adp-text-larger-title primary-text-color"
+                            >
+                                Large Title
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 5.2rem</div>
+                                <div>iPad 4.8rem</div>
+                                <div>Phone Landscape/portrait 4.4rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-larger-title"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 500</p>
+                                <p>Line height: 1.05</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-title1 primary-text-color">
+                                Title1
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 4.4rem</div>
+                                <div>iPad 4.0rem</div>
+                                <div>Phone Landscape/portrait 3.8rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-title1"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.2</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-title2 primary-text-color">
+                                Title2
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 4.0rem</div>
+                                <div>iPad 3.8rem</div>
+                                <div>Phone Landscape/portrait 3.6rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-title2"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 500</p>
+                                <p>Line height: 1.2</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-title3 primary-text-color">
+                                Title3
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 3.6rem</div>
+                                <div>iPad 3.4rem</div>
+                                <div>Phone Landscape/portrait 3.2rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-title3"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 600</p>
+                                <p>Line height: 1.2</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-headline1 primary-text-color">
+                                Headline1
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 3.0rem</div>
+                                <div>iPad 2.8rem</div>
+                                <div>Phone Landscape/portrait 2.6rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-headline1"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 600</p>
+                                <p>Line height: 1.3</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-headline2 primary-text-color">
+                                Headline2
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 2.4rem</div>
+                                <div>iPad 2.4rem</div>
+                                <div>Phone Landscape/portrait 2.4rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-headline2"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 700</p>
+                                <p>Line height: 1.3</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="adp-text-headline3 primary-text-color">
+                                Headline3
+                            </h1>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 2.0rem</div>
+                                <div>iPad 2.0rem</div>
+                                <div>Phone Landscape/portrait 2.0rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-headline3"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 700</p>
+                                <p>Line height: 1.3</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="adp-text-body-large primary-text-color">
+                                Body Large
+                            </p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 2.0rem</div>
+                                <div>iPad 2.0rem</div>
+                                <div>Phone Landscape/portrait 2.0rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-body-large "</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.6</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="adp-text-body primary-text-color">Body</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 1.8rem</div>
+                                <div>iPad 1.8rem</div>
+                                <div>Phone Landscape/portrait 1.8rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-body"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.6</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="adp-text-body-small primary-text-color">
+                                Body Small
+                            </p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 1.6rem</div>
+                                <div>iPad 1.6rem</div>
+                                <div>Phone Landscape/portrait 1.6rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-body-small"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.6</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="adp-text-caption primary-text-color">
+                                Caption
+                            </p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 1.4rem</div>
+                                <div>iPad 1.4rem</div>
+                                <div>Phone Landscape/portrait 1.4rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-caption"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.3</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="adp-text-footnote primary-text-color">
+                                Footnote
+                            </p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <div>Desktop 1.2rem</div>
+                                <div>iPad 1.2rem</div>
+                                <div>Phone Landscape/portrait 1.2rem</div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>class="adp-text-footnote"</p>
+                        </td>
+                        <td>
+                            <div class="flex-column">
+                                <p>font-weight: 400</p>
+                                <p>Line height: 1.3</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Input Box Styles -->
+                <table id="form">
+                    <tr>
+                        <th colspan="2">
+                            <h1 class="adp-text-large-title">Form</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="width: 60%">Input box</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                class="adp-input"
+                            />
+                        </td>
+                        <td>
+                            <p class="adp-text-body">class="adp-input"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="style-checkbox" class="adp-input">
+                                <option value="">
+                                    Please choose one option
+                                </option>
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">JAVASCRIPT</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p class="adp-text-body">class="adp-input"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="adp-options" />
+                        </td>
+                        <td>
+                            <p class="adp-text-body">class="adp-options"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" class="adp-options" />
+                        </td>
+                        <td>
+                            <p class="adp-text-body">class="adp-options"</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Navbar Styles -->
+                <table id="form">
+                    <tr>
+                        <th>
+                            <h1 class="adp-text-large-title">Navbars</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Look at following files for different navbar styles
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>navbar.html | navbar.css</td>
+                    </tr>
+                    <tr>
+                        <td>navbar-centered.html | navbar-centered.css</td>
+                    </tr>
+                    <tr>
+                        <td>navbar-drag-down.html | navbar-drag-down.css</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+    <script src="js/main.js"></script>
+</html>
