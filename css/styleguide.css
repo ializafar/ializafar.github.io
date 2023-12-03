@@ -1,0 +1,15 @@
+.style-guide-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.style-guid-text {
+    margin: auto 0;
+}
+
+.test-bar {
+    width: 10rem;
+    height: 1rem;
+    width: 10rem;
+    margin: auto auto;
+}
