@@ -27,7 +27,7 @@
         lightest is usually third last
         darkest is 5th element on darker row
     */
-    --color-lightest-background: #d3eafd;
+    --color-lightest-background: #e9f5fe;
     --color-lightest-background-border-shadow: #d3eafd50;
     --color-darkest-background: #114b7a;
 
@@ -78,7 +78,7 @@ html {
     overflow-x: hidden;
 }
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     /* font-family: "Rubik", sans-serif; */
     color: var(--color-body);
     font-size: 2.4rem;
@@ -1087,6 +1087,10 @@ Standard padings
 }
 .main {
     padding-top: 15rem;
+}
+
+.grid-2-1 {
+    display: grid;
 }
 
 .style-guide {

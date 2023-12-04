@@ -1,0 +1,25 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    max-width: 140rem;
+    margin: auto auto;
+}
+.sticky .hero-section {
+    height: 100vh;
+    padding-top: 8rem;
+}
+
+.hero-text-section p {
+    max-width: 55rem;
+}
+
+.picture-section {
+}
+.profile-picture {
+    height: 60rem;
+}
+
+@media screen and (min-width: 1024px) {
+}
