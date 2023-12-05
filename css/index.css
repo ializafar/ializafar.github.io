@@ -1,3 +1,10 @@
+.navbar-link.title:link,
+navbar-link.title:visited,
+navbar-link.title:hover,
+navbar-link.title:active {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
 .hero-section {
     display: flex;
     align-items: center;
@@ -23,7 +30,7 @@
     animation-duration: 0.8s;
 }
 
-.hero-text-section p {
+.hero-text-section article {
     max-width: 55rem;
     opacity: 0;
     animation-name: fadeIn;
@@ -35,7 +42,7 @@
 
 .picture-section {
 }
-.profile-picture {
+.profile-picture-round {
     height: 50rem;
     width: 50rem;
     border-radius: 50%;
@@ -46,7 +53,7 @@
     box-shadow: 1px 10px 100px var(--color-primary);
     animation-name: slideInFromRight;
     animation-delay: 0.8s;
-    animation-duration: 1s;
+    animation-duration: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
 }

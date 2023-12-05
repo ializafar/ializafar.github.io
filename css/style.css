@@ -301,7 +301,7 @@ p {
     font-weight: 600;
     margin: 1rem 0;
     padding: 2rem 3rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     white-space: nowrap;
     text-align: center;
     transition: all 0.3s;
