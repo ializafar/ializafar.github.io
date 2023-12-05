@@ -1139,6 +1139,16 @@ th {
         opacity: 1;
     }
 }
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes slideUpFromBottom {
     0% {

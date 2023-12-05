@@ -1,7 +1,7 @@
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 4rem;
     max-width: 140rem;
     margin: auto auto;
@@ -10,6 +10,7 @@
     height: 100vh;
     padding-top: 8rem;
 }
+/* Left section for text and Call to action button */
 .hero-text-section h1 {
     animation-name: slideInFromLeft;
     animation-timing-function: ease-out;
@@ -35,7 +36,19 @@
 .picture-section {
 }
 .profile-picture {
-    height: 60rem;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+    border-width: 5px;
+    border: 5px solid var(--color-primary-lighter);
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 1px 10px 100px var(--color-primary);
+    animation-name: slideInFromRight;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @media screen and (min-width: 1024px) {
