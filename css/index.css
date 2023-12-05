@@ -10,9 +10,26 @@
     height: 100vh;
     padding-top: 8rem;
 }
+.hero-text-section h1 {
+    animation-name: slideInFromLeft;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+
+.hero-text-section h2 {
+    animation-name: slideUpFromBottom;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+}
 
 .hero-text-section p {
     max-width: 55rem;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 .picture-section {
