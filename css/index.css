@@ -9,15 +9,19 @@ navbar-link.title:active {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 4rem;
+    /* padding: 4rem; */
     max-width: 140rem;
-    margin: auto auto;
+    margin: auto 3.2rem;
+    /* background: lightgray; */
 }
 .sticky .hero-section {
     height: 100vh;
     padding-top: 8rem;
 }
 /* Left section for text and Call to action button */
+.hero-text-section {
+    /* background: dodgerblue; */
+}
 .hero-text-section h1 {
     animation-name: slideInFromLeft;
     animation-timing-function: ease-out;
@@ -40,9 +44,12 @@ navbar-link.title:active {
     animation-fill-mode: forwards;
 }
 
+/* Right Section */
+
 .picture-section {
+    /* background: gold; */
 }
-.profile-picture-round {
+.profile-picture-container {
     height: 50rem;
     width: 50rem;
     border-radius: 50%;
@@ -57,6 +64,40 @@ navbar-link.title:active {
     opacity: 0;
     animation-fill-mode: forwards;
 }
+.profile-picture {
+    transform: translate(-3.5rem, -2.5rem);
+}
+@media screen and (max-width: 1200px) {
+    .profile-picture-container {
+        height: 40rem;
+        width: 40rem;
+    }
+    .profile-picture {
+        transform: translate(-9.5rem, -7.5rem) scale(0.8);
+    }
+}
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .profile-picture-container {
+        height: 30rem;
+        width: 30rem;
+    }
+    .profile-picture {
+        transform: translate(-14.5rem, -13.5rem) scale(0.7);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section{
+        flex-direction: column-reverse;
+        flex
+
+    }
+    .profile-picture-container {
+        height: 20rem;
+        width: 20rem;
+    }
+    .profile-picture {
+        transform: translate(-18.5rem, -21.5rem) scale(0.4);
+    }
 }
