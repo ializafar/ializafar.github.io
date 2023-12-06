@@ -29,6 +29,7 @@ navbar-link.title:active {
 }
 
 .hero-text-section h2 {
+    margin-top: 0.8rem;
     animation-name: slideUpFromBottom;
     animation-timing-function: ease-out;
     animation-duration: 0.8s;
@@ -93,12 +94,15 @@ navbar-link.title:active {
     }
 }
 
-@media screen and (max-width: 478) {
+@media screen and (max-width: 478px) {
     .profile-picture-container {
         height: 20rem;
         width: 20rem;
     }
     .profile-picture {
         transform: translate(-18.5rem, -21.5rem) scale(0.4);
+    }
+    .hero-text-section h1 {
+        display: none;
     }
 }
