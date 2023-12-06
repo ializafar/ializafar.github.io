@@ -88,11 +88,12 @@ navbar-link.title:active {
 }
 
 @media screen and (max-width: 768px) {
-    .hero-section{
+    .hero-section {
         flex-direction: column-reverse;
-        flex
-
     }
+}
+
+@media screen and (max-width: 478) {
     .profile-picture-container {
         height: 20rem;
         width: 20rem;
