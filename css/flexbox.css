@@ -8,10 +8,18 @@
 }
 .box {
     width: 50rem;
-    height: 100vh;
+    height: 50rem;
     background: gold;
     /* margin: 1rem; */
 }
 .box.red {
     background: tomato;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .flex-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }

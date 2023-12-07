@@ -11,8 +11,8 @@ navbar-link.title:active {
     justify-content: space-around;
     /* padding: 4rem; */
     max-width: 140rem;
-    margin: auto 3.2rem;
-    /* background: lightgray; */
+    margin: auto auto;
+    /* background: lightcoral; */
 }
 .sticky .hero-section {
     height: 100vh;
@@ -88,10 +88,29 @@ navbar-link.title:active {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
     .hero-section {
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
+    .hero-text-section {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+    .hero-text-section h1,
+    .hero-text-section h2,
+    .hero-text-section p {
+        text-align: center;
+    }
+    .sticky .hero-section {
+        height: 90vh;
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 478px) {
