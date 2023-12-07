@@ -12,6 +12,7 @@ navbar-link.title:active {
     /* padding: 4rem; */
     max-width: 140rem;
     margin: auto auto;
+    padding: 1.6rem;
     /* background: lightcoral; */
 }
 .sticky .hero-section {
@@ -20,6 +21,8 @@ navbar-link.title:active {
 }
 /* Left section for text and Call to action button */
 .hero-text-section {
+    display: flex;
+    flex-direction: column;
     /* background: dodgerblue; */
 }
 .hero-text-section h1 {
@@ -33,6 +36,7 @@ navbar-link.title:active {
     animation-name: slideUpFromBottom;
     animation-timing-function: ease-out;
     animation-duration: 0.8s;
+    margin-top: 0.8rem;
 }
 
 .hero-text-section article {
@@ -43,6 +47,12 @@ navbar-link.title:active {
     animation-duration: 0.8s;
     animation-delay: 0.8s;
     animation-fill-mode: forwards;
+    margin-top: 3.2rem;
+}
+
+.hero-text-section button {
+    align-self: flex-start;
+    margin-top: 3.2rem;
 }
 
 /* Right Section */
@@ -68,15 +78,6 @@ navbar-link.title:active {
 .profile-picture {
     transform: translate(-3.5rem, -2.5rem);
 }
-@media screen and (max-width: 1200px) {
-    .profile-picture-container {
-        height: 40rem;
-        width: 40rem;
-    }
-    .profile-picture {
-        transform: translate(-9.5rem, -7.5rem) scale(0.8);
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .profile-picture-container {
@@ -87,7 +88,7 @@ navbar-link.title:active {
         transform: translate(-14.5rem, -13.5rem) scale(0.7);
     }
 }
-
+/* Tabletes Portrait */
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     .hero-section {
         flex-direction: column-reverse;
@@ -100,8 +101,7 @@ navbar-link.title:active {
         margin-right: 1.6rem;
     }
     .hero-text-section h1,
-    .hero-text-section h2,
-    .hero-text-section p {
+    .hero-text-section h2 {
         text-align: center;
     }
     .sticky .hero-section {
@@ -110,9 +110,7 @@ navbar-link.title:active {
     }
 }
 
-@media screen and (max-width: 768px) {
-}
-
+/* Large Phone screens */
 @media screen and (max-width: 478px) {
     .profile-picture-container {
         height: 20rem;
@@ -123,5 +121,41 @@ navbar-link.title:active {
     }
     .hero-text-section h1 {
         display: none;
+    }
+}
+/* Medium Phone screen */
+@media screen and (max-width: 425px) {
+    .profile-picture-container {
+        margin-top: 1.6rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .profile-picture {
+        transform: translate(-20rem, -24.5rem) scale(0.35);
+    }
+    .hero-text-section h1 {
+        display: none;
+    }
+    .hero-text-section h2 {
+        margin-top: 0.8rem;
+    }
+    .hero-text-section article,
+    .hero-text-section button {
+        margin-top: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sticky .hero-section {
+        height: auto;
+        padding-top: 8rem;
+    }
+}
+
+/* Landscape for phone */
+@media screen and (max-height: 478px) and (orientation: landscape) {
+    .sticky .hero-section {
+        height: auto;
+        padding-top: 8rem;
     }
 }
