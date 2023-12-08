@@ -18,6 +18,11 @@
 */
 
 :root {
+    --color-default-background: #fff;
+    --color-default-background-variation1: #f9f9f9;
+    --color-default-background-variation2: #e6e6e6;
+    --color-default-background-variation3: #cccccc;
+
     --color-primary: #2196f3;
     --color-primary-lighter: #4dabf5;
     --color-primary-darker: #1e87db;
@@ -195,6 +200,18 @@ p {
 }
 
 /* Backgrounds */
+.default-background {
+    background-color: var(--color-default-background);
+}
+.default-background-variation1 {
+    background-color: var(--color-default-background-variation1);
+}
+.default-background-variation2 {
+    background-color: var(--color-default-background-variation2);
+}
+.default-background-variation3 {
+    background-color: var(--color-default-background-variation3);
+}
 
 .primary-background {
     background-color: var(--color-primary);
@@ -1082,8 +1099,9 @@ Standard padings
 */
 
 .container {
-    max-width: 1140px;
+    max-width: 140rem;
     margin: 0 auto;
+    padding: 2.4rem;
 }
 .main {
     padding-top: 15rem;
@@ -1122,7 +1140,66 @@ td {
 th {
     font-size: 2.4rem;
 }
+/**********************************
+        Grds
+************************************ */
 
+/* .grid-container {
+    border: 3px solid lightgray;
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    width: 90vw;
+    margin: auto auto;
+
+    gap: 0;
+} */
+
+.grid-4-2-1 {
+    /* border: 3px solid lightgray; */
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    width: 100%;
+    margin: auto auto;
+    gap: 3rem 3rem;
+}
+@media screen and (max-width: 1100px) {
+    .grid-4-2-1 {
+        grid-template-columns: 50fr 50fr;
+    }
+}
+@media screen and (max-width: 730) {
+    .grid-4-2-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Layout components - Card */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+.card--default {
+    background: var(--color-default-background);
+    color: var(--text-color-primary);
+}
+.card--light {
+    background: var(--color-primary-lighter);
+    color: #fff;
+}
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: white;
+}
+
+.card__logo {
+    height: 4.8rem;
+    width: 4.8rem;
+}
 /* 
 *********************************
     Animation

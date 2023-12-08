@@ -1,3 +1,7 @@
+/* ********************** 
+Classes for hero section
+*****************************/
+
 .navbar-link.title:link,
 navbar-link.title:visited,
 navbar-link.title:hover,
@@ -6,6 +10,8 @@ navbar-link.title:active {
     font-weight: 500;
 }
 .hero-section {
+}
+.hero-section-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,7 +21,7 @@ navbar-link.title:active {
     padding: 1.6rem;
     /* background: lightcoral; */
 }
-.sticky .hero-section {
+.sticky .hero-section-content {
     height: 100vh;
     padding-top: 8rem;
 }
@@ -90,7 +96,7 @@ navbar-link.title:active {
 }
 /* Tabletes Portrait */
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-    .hero-section {
+    .hero-section-content {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
@@ -104,7 +110,7 @@ navbar-link.title:active {
     .hero-text-section h2 {
         text-align: center;
     }
-    .sticky .hero-section {
+    .sticky .hero-section-content {
         height: 90vh;
         padding-top: 8rem;
     }
@@ -158,4 +164,12 @@ navbar-link.title:active {
         height: auto;
         padding-top: 8rem;
     }
+}
+
+/* *********************
+    Classes for skills section
+*/
+
+.skills-section {
+    padding-top: 9.6rem;
 }
