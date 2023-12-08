@@ -1167,7 +1167,7 @@ th {
         grid-template-columns: 50fr 50fr;
     }
 }
-@media screen and (max-width: 730) {
+@media screen and (max-width: 730px) {
     .grid-4-2-1 {
         grid-template-columns: 1fr;
     }
