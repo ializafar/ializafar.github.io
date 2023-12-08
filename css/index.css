@@ -10,7 +10,7 @@ navbar-link.title:active {
     font-weight: 500;
 }
 .hero-section {
-    background-color: orange;
+    /* background-color: orange; */
     height: 100vh;
 }
 .hero-section-content {
@@ -20,7 +20,7 @@ navbar-link.title:active {
     /* padding: 4rem; */
     max-width: 140rem;
     margin: auto auto;
-    background: lightcoral;
+    /* background: lightcoral; */
     height: 100%;
 }
 .sticky .hero-section {
