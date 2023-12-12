@@ -16,7 +16,7 @@ navbar-link.title:active {
 .hero-section-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     /* padding: 4rem; */
     max-width: 140rem;
     margin: auto auto;
@@ -167,6 +167,6 @@ navbar-link.title:active {
     Classes for skills section
 */
 
-.skills-section {
+/* .skills-section {
     padding-top: 9.6rem;
-}
+} */

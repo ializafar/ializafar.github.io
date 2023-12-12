@@ -74,6 +74,12 @@
     --navbar-contrast-gradient-color: #88888866;
     --navbar-links-color: #fff;
     --navbar-links-active-hover-color: #ccc;
+
+    /* Layout variable */
+
+    --section-spacing-desktop: 9.6rem;
+    --section-spacing-tablets: 6.4rem;
+    --section-spacing-mobile: 4.8rem;
 }
 
 /* Typography */
@@ -1097,12 +1103,25 @@ Standard padings
     Layouts
 ********************************
 */
-
+.section {
+    padding: var(--section-spacing-desktop) 0;
+}
+@media screen and (max-width: 768px) {
+    .section {
+        padding: var(--section-spacing-tablets) 0;
+    }
+}
+@media screen and (max-width: 478px) {
+    .section {
+        padding: var(--section-spacing-mobile) 0;
+    }
+}
 .container {
     max-width: 140rem;
     margin: 0 auto;
-    padding: 2.4rem;
+    padding: 0 2.4rem;
 }
+
 .main {
     padding-top: 15rem;
 }
@@ -1121,7 +1140,7 @@ table {
     margin: 5rem auto;
     box-shadow: 1px 3px 10px lightgray;
     width: 100%;
-    padding: ;
+    padding: 3.2rem;
 }
 table tr:nth-child(even) {
     background-color: white;
