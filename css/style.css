@@ -1122,6 +1122,22 @@ Standard padings
     padding: 0 2.4rem;
 }
 
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    width: 100%;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.restricted-text-width {
+    max-width: 60rem;
+}
+
 .main {
     padding-top: 15rem;
 }

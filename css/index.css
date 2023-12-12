@@ -129,7 +129,7 @@ navbar-link.title:active {
     }
 }
 /* Medium Phone screen */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 389px) {
     .profile-picture-container {
         margin-top: 0.8rem;
         height: 15rem;
@@ -150,7 +150,7 @@ navbar-link.title:active {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 389px) {
     .hero-section-content {
         justify-content: flex-end;
     }
