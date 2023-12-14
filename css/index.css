@@ -18,10 +18,10 @@ navbar-link.title:active {
     align-items: center;
     justify-content: space-between;
     /* padding: 4rem; */
-    max-width: 140rem;
     margin: auto auto;
     /* background: lightcoral; */
     height: 100%;
+    gap: 1.6rem;
 }
 .sticky .hero-section {
     padding-top: 8rem;
@@ -47,18 +47,22 @@ navbar-link.title:active {
 
 .hero-text-section article {
     max-width: 55rem;
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.8s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
     margin-top: 3.2rem;
 }
 
 .hero-text-section button {
     align-self: flex-start;
     margin-top: 3.2rem;
+}
+
+.hero-text-section article,
+.hero-text-section button {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 /* Right Section */
@@ -85,6 +89,7 @@ navbar-link.title:active {
     transform: translate(-3.5rem, -2.5rem);
 }
 
+/* For screen width less than 1024px reduce the profile picture size */
 @media screen and (max-width: 1024px) {
     .profile-picture-container {
         height: 30rem;
@@ -94,13 +99,13 @@ navbar-link.title:active {
         transform: translate(-14.5rem, -13.5rem) scale(0.7);
     }
 }
-/* Tabletes Portrait */
+/* Tabletes Portrait then change the layout. Profile picture on top */
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     .hero-section-content {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 4.8rem;
     }
     .hero-text-section {
         margin-left: 1.6rem;
@@ -115,8 +120,18 @@ navbar-link.title:active {
     }
 }
 
-/* Large Phone screens */
+/* Large Phone screens . Reduce the profile picture and remove the headline
+    My name is Ali to save the space
+    The can see the name on top left at navbar
+    Also reduce the height to 90vh becaus bottom or top address bar tak up some space initially
+*/
 @media screen and (max-width: 478px) {
+    .hero-section {
+        height: 90vh;
+    }
+    .hero-section-content {
+        gap: 2.4rem;
+    }
     .profile-picture-container {
         height: 20rem;
         width: 20rem;
@@ -128,8 +143,12 @@ navbar-link.title:active {
         display: none;
     }
 }
-/* Medium Phone screen */
-@media screen and (max-width: 389px) {
+/* 
+Medium Phone screen. 
+Less than iPhone 12. Further reduce profile picture size
+
+*/
+@media screen and (max-width: 390px) {
     .profile-picture-container {
         margin-top: 0.8rem;
         height: 15rem;
@@ -137,9 +156,6 @@ navbar-link.title:active {
     }
     .profile-picture {
         transform: translate(-20rem, -24.5rem) scale(0.35);
-    }
-    .hero-text-section h1 {
-        display: none;
     }
     .hero-text-section h2 {
         margin-top: 0.8rem;
@@ -155,7 +171,12 @@ navbar-link.title:active {
         justify-content: flex-end;
     }
 }
-
+@media screen and (max-height: 725px) {
+    .sticky .hero-section {
+        height: auto;
+        padding-bottom: 1.6rem;
+    }
+}
 /* Landscape for phone */
 @media screen and (max-height: 478px) and (orientation: landscape) {
     .sticky .hero-section {
