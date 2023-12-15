@@ -493,7 +493,8 @@ a {
     padding-bottom: 2px;
     transition: all 0.3s;
 }
-.adp-link--primary {
+.adp-link--primary:link,
+.adp-link--primary:visited {
     color: var(--color-primary);
     border-bottom: 1px solid currentColor;
 }
@@ -701,9 +702,6 @@ a {
     }
     .adp-text-title3 {
         font-size: 3.2rem;
-    }
-    .adp-text-headline1 {
-        font-size: 2.6rem;
     }
 }
 /* Phone portrait */
@@ -1136,6 +1134,7 @@ Standard padings
     justify-content: flex-end;
     gap: 1.6rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 .flex-center {
     display: flex;
@@ -1223,6 +1222,7 @@ th {
     grid-template-columns: 50fr 50fr;
     width: 100%;
     margin: auto auto;
+    justify-items: center;
     gap: 3.2rem 3.2rem;
 }
 
@@ -1304,4 +1304,36 @@ th {
     to {
         opacity: 1;
     }
+}
+
+/* using animation By applying following classes */
+
+.adp-animate-slideInFromLeft {
+    animation-name: slideInFromLeft;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.adp-animate-slideInFromRight {
+    animation-name: slideInFromRight;
+    animation-delay: 0.8s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.adp-animate-slideUpFromBottom {
+    animation-name: slideUpFromBottom;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.adp-animate-fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }

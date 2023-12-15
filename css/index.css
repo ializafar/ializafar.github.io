@@ -50,13 +50,13 @@ navbar-link.title:active {
     margin-top: 3.2rem;
 }
 
-.hero-text-section button {
+.hero-text-section a {
     align-self: flex-start;
     margin-top: 3.2rem;
 }
 
 .hero-text-section article,
-.hero-text-section button {
+.hero-text-section a {
     opacity: 0;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
@@ -130,7 +130,7 @@ navbar-link.title:active {
         height: 90vh;
     }
     .hero-section-content {
-        gap: 2.4rem;
+        gap: 3.2rem;
     }
     .profile-picture-container {
         height: 20rem;
@@ -161,7 +161,7 @@ Less than iPhone 12. Further reduce profile picture size
         margin-top: 0.8rem;
     }
     .hero-text-section article,
-    .hero-text-section button {
+    .hero-text-section a {
         margin-top: 1.6rem;
     }
 }
@@ -172,7 +172,7 @@ Less than iPhone 12. Further reduce profile picture size
     }
 }
 @media screen and (max-height: 725px) {
-    .sticky .hero-section {
+    .hero-section {
         height: auto;
         padding-bottom: 1.6rem;
     }
