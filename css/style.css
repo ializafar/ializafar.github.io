@@ -1150,10 +1150,6 @@ Standard padings
     padding-top: 15rem;
 }
 
-.grid-2-1 {
-    display: grid;
-}
-
 .style-guide {
     display: flex;
     flex-direction: column;
@@ -1219,14 +1215,14 @@ th {
 .grid-2-1 {
     /* border: 3px solid lightgray; */
     display: grid;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     margin: auto auto;
     justify-items: center;
     gap: 3.2rem 3.2rem;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
     .grid-2-1 {
         grid-template-columns: 1fr;
     }
