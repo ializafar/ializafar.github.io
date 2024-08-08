@@ -77,16 +77,16 @@
                 </button>
             </nav>
         </header>
-        <section id="home" class="hero-section">
+        <section id="home" class="hero-section primary-lightest-background">
             <div class="container hero-section-content">
                 <div class="hero-text-section">
                     <h1
-                        class="adp-text-title1 weight-semi-bold septenary-text-color"
+                        class="adp-text-title1 weight-semi-bold septenary-text-color adp-animate-slideInFromLeft"
                     >
                         Hello, My name is Ali Zafar
                     </h1>
                     <h2
-                        class="adp-text-title3 primary-text-color weight-regular primary-text-color hero-tag-line-text"
+                        class="adp-text-title3 primary-text-color weight-regular primary-text-color adp-animate-slideUpFromBottom"
                     >
                         Lead Software Engineer
                     </h2>
@@ -94,14 +94,21 @@
                         I am Software Development Engineer with 17 years'
                         experience in both fast-paced startups and established
                         corporate settings, specializing in iOS development.
-                        Proficient in the MERN stack and ASP.NET technologies.
+                        Proficient in the Android and ASP.NET technologies.
                     </article>
-                    <a class="adp-btn adp-btn--primary-glow" href="#skills">
-                        Explore Skills
-                    </a>
+                    <div class="hero-section-buttons">
+                        <a class="adp-btn adp-btn--primary-glow" href="#skills">
+                            Explore Skills
+                        </a>
+                        <a class="adp-btn adp-btn--outline" href="#skills">
+                            Public Github
+                        </a>
+                    </div>
                 </div>
                 <div class="picture-section">
-                    <div class="profile-picture-container">
+                    <div
+                        class="profile-picture-container adp-animate-slideInFromRight"
+                    >
                         <img class="profile-picture" src="images/profile.png" />
                     </div>
                 </div>
@@ -132,7 +139,7 @@
                         </header>
                         <div class="card__body adp-text-body">
                             I have an extensive background in iOS app
-                            development, spanning back to 2009. My expertise
+                            development, spanning back to 2008. My expertise
                             includes building enterprise-level native
                             applications utilizing the MVVM design pattern. I am
                             adept at crafting code that is easily testable and
@@ -149,26 +156,23 @@
                         <header class="card__header adp-text-headline3">
                             <div>
                                 <ion-icon
-                                    name="file-tray-stacked-outline"
+                                    name="logo-android"
                                     class="card__logo"
                                 ></ion-icon>
                             </div>
                             <h1
                                 class="adp-text-headline3 primary-text-color margin-top-16"
                             >
-                                Mern Stack
+                                Android / Kotlin
                             </h1>
                         </header>
                         <div class="card__body adp-text-body">
-                            Leading the team focused on the MERN stack, I find
-                            that my extensive knowledge of these technologies
-                            immensely benefits our projects. My expertise in
-                            React, Node.js, and MongoDB allows me to guide and
-                            support the team effectively. This deep
-                            understanding of the technology stack helps in
-                            making informed decisions, mentoring team members,
-                            and ensuring the successful implementation of
-                            projects leveraging the MERN stack.
+                            Alongside iOS development, I have been closely
+                            working with and managing Android developers. I have
+                            a strong understanding of the Android system,
+                            including working with LiveData and Android app
+                            architecture, as well as some hands-on experience
+                            with Kotlin..
                         </div>
                     </div>
                     <div class="card card--default">
@@ -257,32 +261,8 @@
                     </h3>
                     <p class="adp-text-body-large">
                         FAST - National University<br />
-                        (2002 - 2007)
+                        (2002 - 2006)
                     </p>
-                </div>
-                <div class="margin-bottom-48">
-                    <h3
-                        class="adp-text-headline2 primary-text-color weight-medium margin-bottom-16"
-                    >
-                        Google Certification UI/UX
-                    </h3>
-                    <p class="adp-text-body-large">Coursera 2024</p>
-                </div>
-                <div class="margin-bottom-48">
-                    <h3
-                        class="adp-text-headline2 primary-text-color weight-medium margin-bottom-16"
-                    >
-                        Mongodb Certification
-                    </h3>
-                    <p class="adp-text-body-large">MongoDB 2024</p>
-                </div>
-                <div class="margin-bottom-48">
-                    <h3
-                        class="adp-text-headline2 primary-text-color weight-medium margin-bottom-16"
-                    >
-                        Webflow Certification
-                    </h3>
-                    <p class="adp-text-body-large">Webflow 2024</p>
                 </div>
             </div>
         </section>
@@ -303,17 +283,62 @@
                         <p class="adp-text-body margin-bottom-16">
                             MRI Angus Mobile makes it easy for MRI Angus users
                             to work while in the field. Full work order
-                            processing, search and query capabilities, provide
-                            property management teams with the mobile solution
-                            they need to enhance responsiveness, improve service
-                            delivery, and efficiently manage vendors, property
-                            staff and field personnel.
+                            processing, search and query capabilities.
+                        </p>
+                        <p class="adp-text-headline3 margin-bottom-16">
+                            Key Features:
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold"
+                                >Work Orders: </span
+                            >Users can create, manage, and complete various work
+                            orders.
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold">
+                                Inspection Schedules:</span
+                            >
+                            Includes comprehensive inspection scheduling and
+                            tracking. Directory Search: Provides a directory
+                            search feature for easy access to information on all
+                            properties the user works in.
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold">
+                                Equipment Work Orders:</span
+                            >
+                            Facilitates the creation and management of
+                            equipment-related work orders.
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold">
+                                Offline Mode:</span
+                            >
+                            Allows engineers to work in offline mode for tenant
+                            work orders, inspections, and equipment maintenance,
+                            ensuring functionality without internet
+                            connectivity.
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold">
+                                Emergency Module:</span
+                            >
+                            Equipped with an emergency module for immediate
+                            response and notifications for action.
+                        </p>
+                        <p class="adp-text-body">
+                            <span class="adp-text-body weight-semi-bold">
+                                Directory Search:</span
+                            >
+
+                            Search feature for easy access to information on all
+                            properties the user works in.
                         </p>
                         <div class="flex-right">
                             <a
                                 target="_blank"
                                 class="adp-link adp-link--primary link-arrow adp-text-body flex-left"
-                                href="https://apps.apple.com/ca/app/mri-angus-mobile/id567178106"
+                                href="https://apps.apple.com/ca/app/mri-angus/id1658862000"
                                 >Appstore</a
                             >
                         </div>

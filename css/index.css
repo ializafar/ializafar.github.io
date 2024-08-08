@@ -11,7 +11,7 @@ navbar-link.title:active {
 }
 .hero-section {
     /* background-color: orange; */
-    height: 100vh;
+    height: calc(100vh);
 }
 .hero-section-content {
     display: flex;
@@ -24,7 +24,7 @@ navbar-link.title:active {
     gap: 1.6rem;
 }
 .sticky .hero-section {
-    padding-top: 8rem;
+    padding-top: var(--navbar-height);
 }
 /* Left section for text and Call to action button */
 .hero-text-section {
@@ -33,16 +33,10 @@ navbar-link.title:active {
     /* background: dodgerblue; */
 }
 .hero-text-section h1 {
-    animation-name: slideInFromLeft;
-    animation-timing-function: ease-out;
-    animation-duration: 0.5s;
 }
 
 .hero-text-section h2 {
     margin-top: 0.8rem;
-    animation-name: slideUpFromBottom;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
 }
 
 .hero-text-section article {
@@ -60,8 +54,8 @@ navbar-link.title:active {
     opacity: 0;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.8s;
-    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -79,14 +73,19 @@ navbar-link.title:active {
     overflow: hidden;
     object-fit: cover;
     box-shadow: 1px 10px 100px var(--color-primary);
-    animation-name: slideInFromRight;
-    animation-delay: 0.8s;
     animation-duration: 2s;
     opacity: 0;
-    animation-fill-mode: forwards;
 }
 .profile-picture {
     transform: translate(-3.5rem, -2.5rem);
+}
+
+.hero-section-buttons {
+    display: flex;
+    margin-top: 1.6rem;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1.6rem;
 }
 
 /* For screen width less than 1024px reduce the profile picture size */

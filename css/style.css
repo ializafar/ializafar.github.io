@@ -32,8 +32,8 @@
         lightest is usually third last
         darkest is 5th element on darker row
     */
-    --color-lightest-background: #e9f5fe;
-    --color-lightest-background-border-shadow: #d3eafd50;
+    --color-lightest-background: #c9ecf6;
+    --color-lightest-background-border-shadow: #2f353a50;
     --color-darkest-background: #114b7a;
 
     --color-secondary: #00d9ff;
@@ -74,6 +74,7 @@
     --navbar-contrast-gradient-color: #88888866;
     --navbar-links-color: #fff;
     --navbar-links-active-hover-color: #ccc;
+    --navbar-height: 8rem;
 
     /* Layout variable */
 
@@ -493,6 +494,7 @@ a {
     padding-bottom: 2px;
     transition: all 0.3s;
 }
+
 .adp-link--primary:link,
 .adp-link--primary:visited {
     color: var(--color-primary);
@@ -1313,8 +1315,7 @@ th {
 
 .adp-animate-slideInFromRight {
     animation-name: slideInFromRight;
-    animation-delay: 0.8s;
-    animation-duration: 2s;
+    animation-duration: 0.8s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
